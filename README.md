@@ -1,2 +1,1 @@
-# studious-fies
-In here we are going to 
+In here I are going to post the common used code in ouer day-to-day life.
