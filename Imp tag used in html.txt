@@ -1,0 +1,18 @@
+Bassic of HTML
+
+Document outline
+<DOCTYPE> ———▷ version of (x) HTML
+
+Input Types in HTML
+
+<input type = "text">  ———▷ ABCS
+<input type = "password">  ———▷ *****
+<input type = "radio">  ———▷ ◯ Yes  ◯ No
+<input type = "number">  ———▷ 1223456 
+<input type = "image">  ———▷ image
+<input type = "checkbox">  ———▷ ▢ ▢ ▢
+<input type = "button">  ———▷ [Butoon]
+<input type = "color">  ———▷ color(red, blue)
+<input type = "email">  ———▷ abc@gmail.cpm
+<input type= "file">  ———▷ choose file name .pdf
+<input type = "hidden" ———▷ []s
