@@ -1,0 +1,8 @@
+This is to set the Image in properforms as it will auto adjust hight wight and after that it will also remove the baground color
+<style>
+    .photos img{
+        width: 15%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }

@@ -1,0 +1,7 @@
+.wrapper{
+    position: relative;
+}
+.wrapper: :is(.btn, .link){
+    display: inline-flex;
+    al
+}

@@ -1,7 +1,36 @@
 Bassic of HTML
 
-Document outline
-<DOCTYPE> ———▷ version of (x) HTML
+Document Outline :—
+<DOCTYPE> ———▷ Version of (x) HTML
+<html> ———▷ Html Document 
+<head> ———▷ Page Information
+<body> ———▷ Page Contents
+
+Comments:—
+<!-- Comment Text-->
+
+Page Information :—
+<base> ———▷ Base URl
+<meta> ———▷ Meta Data
+<title> ———▷ Title
+<link> ———▷ Relevant Resource Link 
+<style> ———▷ Style Resource
+<script> ———▷ Script Resourse
+
+Document Struture:—
+<h [1-6]> ———▷ Heading
+<div> ———▷ Page Section
+<span> ———▷ Inline Section
+<p> ———▷ Paragraph
+<br> ———▷ Link Break
+<hr> ———▷ Horisontal Link
+
+Link :—
+< a href =""> ———▷ Page Link
+< a href ="mail to:"> ———▷ Email Link
+< a href ="name"> ———▷ Anchor
+< a href ="#name"> ———▷ Link ot Anchor
+
 
 Input Types in HTML
 
@@ -11,8 +40,15 @@ Input Types in HTML
 <input type = "number">  ———▷ 1223456 
 <input type = "image">  ———▷ image
 <input type = "checkbox">  ———▷ ▢ ▢ ▢
+<input type = "range"> ———▷ ⊏=◯==⊐
 <input type = "button">  ———▷ [Butoon]
 <input type = "color">  ———▷ color(red, blue)
 <input type = "email">  ———▷ abc@gmail.cpm
-<input type= "file">  ———▷ choose file name .pdf
-<input type = "hidden" ———▷ []s
+<input type = "file">  ———▷ choose file name .pdf
+<input type = "hidden"> ———▷ []s
+<input type = "submit"> ———▷ submit
+<input type = "date"> ———▷ mm/dd/yyyy
+<input type = "time"> ———▷ --:--:--
+<input type = "search"> ———▷ www.google.com
+
+
