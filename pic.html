@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture arrangement</title>
+</head>
+<body>
+    <p>
+        <h2>There is the pic arrangement in this when we move over mouse it ther will be some change will occur</h2>
+    </p>
+    <div class="pic_arrange">
+        <div style="background-image: url('Dack.jpg');"></div>
+       <div style="background-image: url('Baby.png');"></div>
+       <div style="background-image: url('Baby Daku.png');"></div>
+       <div style="background-image: url('Baby\ bakugo.png');"></div>
+       <div style="background-image: url('Baku\ go\ .jpg');"></div>
+   </div>
+   <style>
+       .pic_arrange{
+           display: flex;
+           height: 20rem;
+           gap: 1rem;
+       }
+       .pic_arrange > div {
+           flex: 1;
+           border-radius: 1rem;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: auto 100%;
+           transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+       }
+       .pic_arrange > div:hover{
+           flex: 5;
+       }
+   </style>
+   <style>
+       body{
+           background-color: pink;
+           max-width: 900px;
+           margin: 1rem auto;
+           text-align: center;
+           border-color: black;
+           padding: 10px;
+           border: 10px;
+       }
+   </style>
+</body>
+</html>
