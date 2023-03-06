@@ -1,60 +1,109 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Fredoka One',
-cursive;
+    font-family: 'Fredoka One',cursive;
+    box-sizing: border-box;
+}
+body{
+    background-color: #572c2c;
+    border-radius: 10px;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    justify-self: center;
+    height: 100vh;
+}
+section{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+aside.card{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 600px;
+}
+aside.card div.front,
+aside.card div.back{
+    position: absolute;
+    top: 0;
+    width: 100;
+    height: 100;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 0.5s all ease-in-out;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 2px 0 #777777;
+}
+aside.card div.front{
+    background-color: #28858b;
+    z-index: 1000;
+    transform: rotateX(0deg);
+}
+aside.crad div.back{
+    background-color: #28858b;
+    z-index: 1000;
+    transform: rotateX(-180deg);
+}
+aside.card:hover div.front{
+    z-index: 900;
+    transform: rotateX(180deg);
+}
+side.card:hover div.back{
+    z-index: 1000;
+    transform: rotateX(0deg);
+}
+<!-- Bellow this is the loding or panding animation + add the * and body before using it and bg color is  #f39c12 and remove this line to rotate the sin -->
+
+.saving{
+    display: flex;
+}
+.saving .dots{
+    height: 15px;
+    width: 15px;
+    display: block;
+    background: #fff;
+    border-radius: 80px;
+    animation-name: opacityDots;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 0 5px;
+}
+.saving .dots:nth-child(1){
+    animation-delay: 0.3s;
+}
+.saving .dots:nth-child(2){
+    animation-delay: 0.6s;
+}
+.saving .dots:nth-child(3){
+    animation-delay: 0.9s;
+}
+.saving .dots:nth-child(4){
+    animation-delay: 1.2s;
+}
+.saving .dots:nth-child(5){
+    animation-delay: 1.5s;
+}
+@keyframes opacityDots {
+    0%{
+        opacity: 0.2;
+        transform: scale(0.5);
     }
-    body{
-        background-color: #572c2c;
-        border-radius: 10px;
-        align-items: center;
-        padding: 100px;
+    20%{
+        opacity: 1;
+        transform: scale(1);
     }
-    section{
-        display: flex;
-        justify-self: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
+    100%{
+        opacity: 0.2;
+        transform: scale(0.5);
     }
-    aside.card{
-        width: 300px;
-        height: 200px;
-        position: relative;
-        perspective: 600px;
-    }
-    aside.card div.front,
-    aside.card div.back{
-        position: absolute;
-        top: 0;
-        width: 100;
-        height: 100;
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
-        transition: 0.5s all ease-in-out;
-        border-radius: 20px;
-        display: flex;
-        justify-self: center;
-        align-items: center;
-        font-size: 40px;
-        color: #fff;
-        text-shadow: 0 2px 0 #777777;
-    }
-    aside.card div.front{
-        background-color: #28858b;
-        z-index: 1000;
-        transform: rotateX(0deg);
-    }
-    aside.crad div.back{
-        background-color: #28858b;
-        z-index: 1000;
-        transform: rotateX(-180deg);
-    }
-    aside.card:hover div.front{
-        z-index: 900;
-        transform: rotateX(180deg);
-    }
-    side.card:hover div.back{
-        z-index: 1000;
-        transform: rotateX(0deg);
-    }
+}
