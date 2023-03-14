@@ -1,0 +1,73 @@
+body{
+    
+}
+h1 {
+margin-left: 70px;
+}
+
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: center;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}
+.box{
+    background: white;
+    padding: 16px 24px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
+}
+.box::after{
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left, #ff5770, #e4428d, #f8063b, #d6cccc, #e7e5e9, #e3dce6, #c42da8, #e4428d, #ff5770);
+    background-size: 200%, 200%;
+    animation: animateGlow 10s linear infinite;
+}
+@keyframes animateGlow {
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 200% 500%;
+    }
+}

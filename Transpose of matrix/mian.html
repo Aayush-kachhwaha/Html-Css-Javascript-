@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matrix Transpose</title>
+</head>
+<body>
+	<form>
+		<label for="rows">Number of Rows:</label>
+		<input type="number" id="rows" name="rows"><br>
+
+		<label for="cols">Number of Columns:</label>
+		<input type="number" id="cols" name="cols"><br>
+
+		<button type="button" onclick="transpose()">Calculate Transpose</button>
+	</form>
+
+	<div id="output"></div>
+
+	<script>
+		function transpose() {
+			// Get user input
+			const numRows = parseInt(document.getElementById("rows").value);
+			const numCols = parseInt(document.getElementById("cols").value);
+
+			// Initialize matrix with zeros
+			const matrix = [];
+			for (let i = 0; i < numRows; i++) {
+			  matrix.push(Array(numCols).fill(0));
+			}
+
+			// Populate matrix with user input
+			for (let i = 0; i < numRows; i++) {
+			  for (let j = 0; j < numCols; j++) {
+			    matrix[i][j] = parseInt(prompt(`Enter element at row ${i+1}, column ${j+1}:`));
+			  }
+			}
+
+			// Calculate transpose of matrix
+			const transposeMatrix = [];
+			for (let j = 0; j < numCols; j++) {
+			  transposeMatrix.push([]);
+			  for (let i = 0; i < numRows; i++) {
+			    transposeMatrix[j].push(matrix[i][j]);
+			  }
+			}
+
+			// Display transpose of matrix
+			document.getElementById("output").innerHTML = `<p>Matrix: ${JSON.stringify(matrix)}</p><p>Transpose Matrix: ${JSON.stringify(transposeMatrix)}</p>`;
+		}
+	</script>
+</body>
+</html>
