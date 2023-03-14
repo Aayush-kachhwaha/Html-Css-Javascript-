@@ -22,13 +22,12 @@
 			const numRows = parseInt(document.getElementById("rows").value);
 			const numCols = parseInt(document.getElementById("cols").value);
 
-			// Initialize matrix with zeros
 			const matrix = [];
 			for (let i = 0; i < numRows; i++) {
 			  matrix.push(Array(numCols).fill(0));
 			}
 
-			// Populate matrix with user input
+			//User input
 			for (let i = 0; i < numRows; i++) {
 			  for (let j = 0; j < numCols; j++) {
 			    matrix[i][j] = parseInt(prompt(`Enter element at row ${i+1}, column ${j+1}:`));
@@ -46,6 +45,7 @@
 
 			// Display transpose of matrix
 			document.getElementById("output").innerHTML = `<p>Matrix: ${JSON.stringify(matrix)}</p><p>Transpose Matrix: ${JSON.stringify(transposeMatrix)}</p>`;
+			
 		}
 	</script>
 </body>
