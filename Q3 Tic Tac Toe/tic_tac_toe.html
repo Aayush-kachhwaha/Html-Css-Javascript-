@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tic_tac_toe.css">
-    
+    <style>
+        body{
+    text-align: center;
+    color: #2b205c;
+    background-color: ;
+    text-justify: auto;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #999;
+    background-color: #fff;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    /* Adding the Border */
+    td {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid black;
+        background-color: rgb(rgb(216, 48, 48), rgb(46, 150, 106), rgb(116, 52, 136));
+    }
+
+    .x {
+        color: blue;
+        font-size: 80px;
+    }
+
+    .o {
+        color: red;
+        font-size: 80px;
+    }
+
+    .win {
+        background-color: yellow;
+    }
+
+    .tic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #reset {
+        margin: 48px 40% ;
+        padding: 20px;   
+    }
+    button{
+        background-color: cyan;
+        border: black chartreuse ;
+        box-sizing: border-box;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    h1{
+        color: #fff;
+        bottom: ;
+    }
+    .box{
+        background: hsl(0, 0%, 0%);
+        padding: 16px 24px;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
+    }
+    .box::after{
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.9) translateZ(0);
+        filter: blur(15px);
+        background: linear-gradient(to left, #ff5770, #e4428d, #c43da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+        background-size: 200%, 200%;
+        animation: animateGlow 1.25s linear infinite;
+    }
+    @keyframes animateGlow {
+        0%{
+            background-position: 0% 50%;
+        }
+        100%{
+            background-position: 200% 500%;
+        }
+    }
+    </style>
+    <!--The title of the program-->
     <title>Tic Tac Toe</title>
+    
 </head>
 <body>
     <div class="box"><h1><em>Tic Tac Toe</em></h1></div>
@@ -34,7 +127,72 @@
         </table><br>
         <button id="restart">Restart</button>
     </div>
-    <script src="tic_tac_toe.js"></script>
+    <script>
+        /** Forming The part for input the value in table
+         * For in this case are X & O
+         */
+        let Symbol = "X";
+        let Ended = false
+
+        let winPos = [
+        [1, 2, 3], [4, 5, 6], 
+        [7, 8, 9], [1, 4, 7], 
+        [2, 5, 8], [3, 6, 9], 
+        [1, 5, 9], [3, 5, 7]
+        ];
+
+        for (let i = 1; i <= 9; i++) {
+        document.getElementById(i.toString()).addEventListener(
+            "click", 
+            function() {
+            if (this.innerHTML === "" && !Ended) {
+                this.innerHTML = Symbol;
+                this.classList.add(Symbol.toLowerCase());
+                
+                /**check of the winner */
+                checkWin();
+                
+                /**swap of x to o */
+                if (Symbol === "X")
+                Symbol = "O"
+                else
+                Symbol = "X"
+            }
+            }
+        );
+        }
+
+        function checkWin() {
+        for (let i = 0; i < winPos.length; i++) {
+            if (
+            document.getElementById(winPos[i][0]).innerHTML === Symbol &&
+            document.getElementById(winPos[i][1]).innerHTML === Symbol &&
+            document.getElementById(winPos[i][2]).innerHTML === Symbol
+            ) {
+            document.getElementById(winPos[i][0]).classList.add("win");
+            document.getElementById(winPos[i][1]).classList.add("win");
+            document.getElementById(winPos[i][2]).classList.add("win"); 
+            Ended = true;
+            setTimeout(function() {
+                alert(Symbol + " wins!");
+            }, 500);
+            }
+        }
+        }
+
+        document.getElementById("restart").addEventListener(
+        "click", 
+        function() {
+            for (let i = 1; i <= 9; i++) {
+            document.getElementById(i.toString()).innerHTML = "";
+            document.getElementById(i.toString()).classList.remove("x");
+            document.getElementById(i.toString()).classList.remove("o");
+            document.getElementById(i.toString()).classList.remove("win");
+            Ended = false;
+            }
+        }
+        );
+    </script>
     <h4>By Aayush Kachhwaha</h4>
 </body>
 </html>
