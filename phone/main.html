@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: aqua;
+        }
+        button{
+            --border-radius: 15 px;
+            --border-width: 4px;
+            appearance: none;
+            position: relative;
+            padding: 1em 2 em;
+            border: 0;
+            background-color: #212212;
+            font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            z-index: 2;
+        }
+            --m-o:
+            content:"";
+            position: ab
+        
+        button:hover::after{
+            animation-play-state: running;
+        }
+
+        @keyframes rotate-hue {
+            to{
+                filter: hue-rotate(1turn);
+            }
+
+
+        }
+
+
+        
+
+        button,
+        button::after{
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Some thing new</title>
+</head>
+<body>
+    <button>Hover me! </button>
+</body>
+</html>
