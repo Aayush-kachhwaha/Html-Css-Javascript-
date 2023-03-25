@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    form{
+        border: 1px solid black;
+        max-width: 600px;
+        padding: 20px;
+    }
+    label{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+    input, select{
+        width: 100%;
+        height: 45px;
+        font-size: 1.5em;
+        background-color: rgba(175, 182, 189, 0.671);
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    button{
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        background-color: aqua;
+        font-size: 1.75em;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 20px;
+    }
+    #checks input{
+        width: 15%;
+    }
+    #checks {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: ;
+    }
+    </style>
+</head>
+<body>
+    <H1>Personal Information Form</H1>
+    <form action="#" method="post">
+        <label for="firstName">First</label>
+        <input type="text" id="firstName" /><br/>
+        <label for="lastName">Last</label>
+        <input type="text" id="lastName" /><br/>
+        <label for="userEmail">Email</label>
+        <input type="email" id="userEmail" /><br/>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="phone"  id="phoneNumber" placeholder="#####-#####" />
+        <label for="department">Department</label>
+        <select  id="department">
+            <option value="accounting">Accounting</option>
+            <option value="marketing">Marketing</option>
+            <option value="admin">Administration</option>
+            <option value="sales">Sales</option>
+            <option value="exec">Executive</option>
+        </select>
+        <div id="checks">
+            <label for="interests">Interests</label>
+            <br><input type="checkbox" id="interests" value="sports">Sports
+            <br><input type="checkbox" id="interests" value="music">music
+            <br><input type="checkbox" id="interests" value="social action">Social action
+            <br><input type="checkbox" id="interests" value="cooking">Cooking
+            <br><label for="officelocation">Office Location</label>
+            <br><input type="radio"  id="New York" name="office">New York
+            <br><input type="radio"  id="Chicago" name="office">Chicago
+            <br><input type="radio"  id="Las Vegas" name="office">Las Vegas
+            <br><input type="radio"  id="Seattle" name="office">Seattle
+        </div>
+        <br><label for="doh">Date of Hite</label>
+        <input type="date"  id="doh">
+        <button type="submit" >Submit Data</button>
+        
+        
+    </form>
+</body>
+</html>
