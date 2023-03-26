@@ -1,0 +1,29 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+.game{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.game img{
+    width: 100%;
+}
+@media only screen and (max-width : 1000px){
+    .game{
+        width: 45%;
+        float: right;
+        height: 650px;
+    }
+}
+@media only screen and (max-width : 1600px){
+    .game{
+        width: 29%;
+        float: right;
+        height: 650px;
+    }
+}
