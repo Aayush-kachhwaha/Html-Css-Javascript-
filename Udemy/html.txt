@@ -1,0 +1,28 @@
+html
+<div></div>
+<script>
+	let sound = new Audio('setps.wav");
+	sound.loop=true;
+	sound.play();
+</script>
+
+css
+
+body{
+	background-image:url();
+	background-repeat: no-repeat;
+}
+div{
+	position: absolute;
+	left: 200px;
+	top: 230px;
+	margin: 0 auto;
+	width: 75px;
+	height: 150px;
+	backgound-image: url();
+	animation: moveX.5s steps(8) infinite;
+}
+
+@keyframes moveX{
+from{background-position-x: 0px;}
+to{background-position-x: -600px;}
