@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varibles</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let name="Aayush";  //String
+        let age =20;        //Integer
+        let gpa =7.9;       //Floating
+        const hometown= "Mumbai";
+
+        let isAayushCool = true;    //Bollean
+        //Object
+        let family=["papa", "maa", "bhaiya"]; 
+
+        document.getElementById("output").innerHTML = name + " is " + age + " year old and is from "+ hometown;
+        // cannot change value of a constnst!
+        gpa = 7.8;  //Reassigend the value of Gpa
+
+        document.getElementById("output").innerHTML = family;
+        
+        console.log(gpa)
+    </script>
+</body>
+</html>
