@@ -114,6 +114,10 @@ body{
     position: relative;
     align-items: center;
 }
+.result-details li:not(:first-child){
+    padding: 22px;
+    border-left: 1ps solid #bfbbfb;
+}
 .result-details li p{
     font-size: 19px;
 }
