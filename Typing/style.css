@@ -107,3 +107,10 @@ body{
      width: calc(100% - 140px);
      justify-content: space-between;
 }
+.result-details li{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
