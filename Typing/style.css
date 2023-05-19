@@ -76,3 +76,7 @@ body{
         opacity: 1;
     }
 }
+.content-box .content{
+    margin-top: 17px;
+    display: flex;
+}
