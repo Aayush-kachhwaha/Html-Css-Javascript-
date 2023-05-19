@@ -97,3 +97,6 @@ body{
     background: #17A2B8;
     transition: transoform 0.3s ease;
 }
+.content button:active{
+    transform: scale(0.97);
+}
