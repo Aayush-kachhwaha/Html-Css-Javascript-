@@ -100,3 +100,10 @@ body{
 .content button:active{
     transform: scale(0.97);
 }
+.content .result-details{
+    display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     width: calc(100% - 140px);
+     justify-content: space-between;
+}
