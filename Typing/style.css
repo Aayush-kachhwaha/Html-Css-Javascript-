@@ -56,3 +56,6 @@ body{
     background: #ffc0cb;
     border-radius: 4px;
 }
+.typing-text p span.active{
+    color: #17a2b8;
+}
