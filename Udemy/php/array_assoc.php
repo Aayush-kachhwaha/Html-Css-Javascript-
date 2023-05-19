@@ -10,14 +10,6 @@
 <body>
     <?php 
         //Declare the array
-        $gaps=(
-            "Smith"(3.43)
-            "Johnsone" => 3.2,
-            "Blackstone" => 2.5,
-            "Caraigson" => 4.3,
-            "Garcia" => 2.4,
-            "wendell" => 2.53
-        );
     ?>
 </body>
 </html>
