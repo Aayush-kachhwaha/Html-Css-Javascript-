@@ -71,3 +71,8 @@ body{
      background: #17A2B8;
      animation: blink 1s ease-in-out infinite;
 }
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+}
