@@ -114,3 +114,6 @@ body{
     position: relative;
     align-items: center;
 }
+.result-details li p{
+    font-size: 19px;
+}
