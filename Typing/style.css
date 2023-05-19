@@ -50,3 +50,9 @@ body{
 .typing-text p span{
     position: relative;
 }
+.typing-text p span.incorrect{
+    color: #cb3439;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
