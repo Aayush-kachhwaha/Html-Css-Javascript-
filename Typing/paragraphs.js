@@ -1,0 +1,3 @@
+const paragraphs=[
+    "Ancient manuscripts also divided sentences into paragraphs with line breaks followed by an initial at the beginning of the next paragraph. An initial is an oversized capital letter, sometimes outdented beyond the margin of the text. This style can be seen, for example, in the original Old English manuscript of Beowulf. Outdenting is still used in English typography, though not commonly.Modern English typography usually indicates a new paragraph by indenting the first line. This style can be seen in the United States Constitution from. For additional ornamentation, a hedera leaf or other symbol can be added to the inter-paragraph white space, or put in the indentation space."
+]
