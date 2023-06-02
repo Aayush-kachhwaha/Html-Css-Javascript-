@@ -16,7 +16,7 @@ function loadParagraph(){
     typingText.innerHTML = "";
     paragraphs[ranIndex].split("").forEach(char => {
         let span = `<span>${char}</span>`
-        typingText.innerHTML+= span;
+        typingText.innerHTML += span;
     });
     typingText.querySelectorAll("span")[0].classList.add("active");
     document.addEventListener("keydown", ()=> inpField.focus());
